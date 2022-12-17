@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    position: relative;
+}
+
+.nav-toggle{
+    display: none;
+}
+.company-logo {
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links{
+    flex-basis: 730px;
+    /* position: relative; */
+
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+ul li a:hover {
+    color: rgb(249, 83, 22);
+}
+
+
+/* Main Section */
+.big-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.left-container {
+    width: 70%;
+    min-height: 550px;
+}
+
+.img img {
+    width: 100%;
+    height: 340px;
+}
+
+.sub-container {
+    margin-top: 20px;
+    height: 190px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+}
+
+.text-header {
+    font-size: 1.7rem
+}
+
+.text-paragraph p {
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.text-paragraph button {
+    padding: 10px 40px;
+    background-color: rgb(217, 76, 25);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+ button:hover{
+    background-color: black;
+    color: white;
+ }
+
+.right-container {
+    width: 25%;
+    height: 550px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 23px;
+
+}
+
+.right-container h2 {
+    color: rgba(224, 148, 17, 0.906);
+    font-size: 2.8rem;
+    margin: 20px 0;
+
+}
+
+.right-container h4 {
+    padding: 20px 0;
+}
+
+.right-container p {
+    line-height: 25px;
+    font-size: 0.8rem;
+    padding-bottom: 30px;
+    color: rgba(210, 204, 195, 0.888);
+    border-bottom: 1px solid rgba(210, 204, 195, 0.888);
+}
+
+/* Information */
+.information{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-block: 40px;
+    gap: 20px;
+}
+
+.sub-information{
+    display: flex;
+    width: calc(33% - 10px);
+    gap: 20px;
+}
+
+.sub-infor-img img{
+    width: 130px;
+    height: 150px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+.text h3{
+    font-size: 2.4rem;
+    color: rgb(201, 190, 174);
+
+}
+
+.text h4{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.text h4:hover{
+    color:  rgb(249, 83, 22);;
+}
+.text p{
+    color: rgb(146, 135, 118);
+}
+@media screen and (max-width:1444px){
+
+    .container{
+        width: 85%;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        right: -100%;
+        top: 100%;
+        width: 75%;
+        padding-block: 20px;
+    }
+    .nav-links.active{
+        right: 0;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+    .big-container{
+        flex-direction: column;
+    }
+
+    .left-container{
+        width: 100%;
+    }
+    .right-container{
+        width: 50%;
+    }
+    
+    .sub-information{
+        width: calc(50% - 10px);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:1042px){
+    .sub-information{
+        flex-direction: column;
+    }
+
+    .right-container{
+        width: 100%;
+        margin-top:100px ;
+    }
+}
+@media screen and (max-width:619px) {
+    
+.sub-container{
+    flex-direction: column;
+    
+}
+
+.right-container{
+    margin-top: 200px;
+}
+.sub-information{
+    width: 100%;
+    flex-direction: row;
+    
+}
+.sub-infor-img img{
+    width: 100px;
+    height: 180px;
+}
+.text{
+    gap: 10px;
+}
+.text h3{
+    font-size: 25px;
+}
+
+.text h4{
+    font-size: 20px;
+}
+
+.text p{
+    font-size: 15px;
+}
+
+
+
+    
+}
